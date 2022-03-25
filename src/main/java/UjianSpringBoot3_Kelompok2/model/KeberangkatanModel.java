@@ -22,7 +22,7 @@ public class KeberangkatanModel {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id_keberangkatan;
+	private long id;
 	private int harga;
 	private String kelas;
 	private String tanggal;
@@ -30,6 +30,8 @@ public class KeberangkatanModel {
 	@OneToOne(cascade = CascadeType.MERGE)
 	@JoinColumn(name = "jurusanId", referencedColumnName = "jurusanId",unique = true)
 	private JurusanModel jurusanId;
-	private String no_polisi;
+	@OneToOne(cascade = CascadeType.MERGE)
+	@JoinColumn(name = "noPolisi", referencedColumnName = "noPolisi",unique = true)
+	private KeberangkatanModel noPolisi;
 
 }

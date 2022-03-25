@@ -25,7 +25,7 @@ public class BookingModel {
 	private long id;
 	
 	@OneToOne(cascade = CascadeType.MERGE)
-	@JoinColumn(name="id_keberangkatan" , referencedColumnName = "id_keberangkatan",unique = true)
+	@JoinColumn(name="id_keberangkatan" , referencedColumnName = "id",unique = true)
 	private KeberangkatanModel id_keberangkatan;
 	
 	@OneToOne(cascade = CascadeType.MERGE)
@@ -39,6 +39,6 @@ public class BookingModel {
 	private JurusanModel jurusanId;
 	
 	@OneToOne(cascade = CascadeType.MERGE)
-	@JoinColumn(name = "nomor_polisi", referencedColumnName = "nomor_polisi", unique = true)
-	private BusModel nomor_polisi;
+	@JoinColumn(name = "noPolisi", referencedColumnName = "noPolisi", unique = true)
+	private BusModel noPolisi;
 }

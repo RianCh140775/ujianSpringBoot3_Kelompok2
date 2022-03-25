@@ -22,11 +22,11 @@ public class BusModel {
 
 	@Id
 	@Column(length = 10)
-	private String nomor_polisi;
+	private String noPolisi;
 	private int kapasitas;
 	private String nama_supir;
 	
 	@OneToOne(cascade = CascadeType.MERGE)
-	@JoinColumn(name = "nama_perusahaan", referencedColumnName = "nama_perusahaan", unique = true)
-	private PerusahaanModel nama_perusahaan;
+	@JoinColumn(name = "namaPerusahaan", referencedColumnName = "namaPerusahaan", unique = true)
+	private PerusahaanModel namaPerusahaan;
 }

@@ -17,11 +17,8 @@ import lombok.NoArgsConstructor;
 public class PenumpangModel {
 
 	@Id
-
 	@Column(length = 20)
 	private String nik;
 	private String nama;
-	private String username;
-	private String password;
 	private String telepon;
 }
