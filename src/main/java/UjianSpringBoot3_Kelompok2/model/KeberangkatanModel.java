@@ -32,6 +32,6 @@ public class KeberangkatanModel {
 	private JurusanModel jurusanId;
 	@OneToOne(cascade = CascadeType.MERGE)
 	@JoinColumn(name = "noPolisi", referencedColumnName = "noPolisi",unique = true)
-	private KeberangkatanModel noPolisi;
+	private BusModel noPolisi;
 
 }

@@ -21,6 +21,6 @@ public class PerusahaanModel {
 //	private long id;
 //	@Column(name="nama", unique = true, nullable = false)
 	@Column(length = 30)
-	private String nama_perusahaan;
+	private String namaPerusahaan;
 	private String alamat;
 }

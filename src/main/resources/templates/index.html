@@ -1,501 +1,608 @@
 <!DOCTYPE html>
-<!--
-	Canvas by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Canvas Free HTML5 Responsive Template | Template Stock</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- =============== Bootstrap Core CSS =============== -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <!-- =============== Google fonts =============== -->
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-	<!-- =============== fonts awesome =============== -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <!-- =============== Plugin CSS =============== -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <!-- =============== Custom CSS =============== -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <!-- =============== Owl Carousel Assets =============== -->
-    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>Revetive - Free Business Corporate Template By MACode ID</title>
+
+  <link rel="stylesheet" href="..//css/bootstrap.css">
+  
+  <link rel="stylesheet" href="..//css/maicons.css">
+
+  <link rel="stylesheet" href="..//vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="..//vendor/owl-carousel/css/owl.carousel.css">
+
+  <link rel="stylesheet" href="..//vendor/fancybox/css/jquery.fancybox.css">
+
+  <link rel="stylesheet" href="..//css/theme.css">
+
 </head>
-
 <body>
-    <!-- =============== Preloader =============== -->
-    <div id="preloader">
-        <div id="loading">
-        </div>
-    </div>
-    <!-- =============== nav =============== -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo">
-                    </a>
-                </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a class="page-scroll" href="#about">About</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#how-it-works">How it works</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#Screenshots">Screenshots</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#Price">Price</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- =============== navbar-collapse =============== -->
+  <header>
 
+   <div th:insert="fragment/header :: navbar(aktif='/')"/>
+
+    <div class="page-banner home-banner mb-5">
+      <div class="slider-wrapper">
+        <div class="owl-carousel hero-carousel">
+          <div class="hero-carousel-item">
+            <img src="..//img/bg_image_1.jpg" alt="">
+            <div class="img-caption">
+              <div class="subhead">We're design studio believe in ideas</div>
+              <h1 class="mb-4">Creative Design</h1>
+              <a href="#services" class="btn btn-outline-light">Get Started</a>
             </div>
-        </div>
-        <!-- =============== container-fluid =============== -->
-    </nav>
-    <!-- =============== header =============== -->
-    <header>
-		<!-- =============== container =============== -->
-        <div class="container">
-            <div class="header-content row">
-                <div class="col-xs-12 col-sm-5 col-md-5">
-                    <h2 class="wow bounceIn animated" data-wow-delay=".40s">FRIENDLY TEMPLATE FOR YOUR APP</h2>
-                    <h3 class="wow bounceIn animated" data-wow-delay=".50s">FOR YOUR SMARTPHONE</h3>
-                    <p class="wow bounceIn animated" data-wow-delay=".60s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.We ensure sit amet, consectetur adipiscing elit</p>
-                    <p>
-                        <div class="btn btn-primary btn-lg btn-ornge wow bounceIn animated" data-wow-delay="1s"><i class="hbtn"></i> <span>Free Download</span> <i class="fa fa-cloud-download"></i>
-                        </div>
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-7 col-md-7 wow slideInLeft animated">
-                    <img src="img/phones.png" alt="phones" />
-                </div>
+          </div>
+          <div class="hero-carousel-item">
+            <img src="..//img/bg_image_2.jpg" alt="">
+            <div class="img-caption">
+              <h1 class="mb-4">We combine Design, Thinking, and Technical</h1>
+              <a href="#services" class="btn btn-outline-light">Get Started</a>
+              <a href="#services" class="btn btn-primary">See Pricing</a>
             </div>
-        </div>
-		<!-- =============== container end =============== -->
-    </header>
-    <!-- =============== About =============== -->
-    <section id="about" class="">
-		<!-- =============== container =============== -->
-        <div class="container">
-            <span class="angle2"></span>
-            <span class="angle"></span>
-            <div class="row">
-                <div class="col-xs-12 col-sm-5 col-md-3 wow fadeInLeft animated" data-wow-delay=".5s">
-                    <h1><span>HEY THERE!</span> WELCOME TO OUR SITE</h2>      
-                  </div>
-                  <div class="col-xs-12 col-sm-7 col-md-9 wow fadeInRight animated" data-wow-delay=".5s">
-                  <h2>Start Bootstrap has everything you need to get your</h2>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</P>
-
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit</p>     
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                  </div>     
+          </div>
+          <div class="hero-carousel-item">
+            <img src="..//img/bg_image_3.jpg" alt="">
+            <div class="img-caption">
+              <div class="subhead">Easy way to build perfect website</div>
+              <h1 class="mb-4">Beautify handcrafted templates for your website</h1>
+              <a href="#services" class="btn btn-primary">Read More</a>
             </div>
-        </div>   
-		<!-- =============== container end =============== -->		
-    </section>
-    <!-- =============== how it works =============== -->
-    <section id="how-it-works" class="parallax">
-	<!-- =============== container =============== -->
+          </div>
+        </div>
+      </div> <!-- .slider-wrapper -->
+    </div> <!-- .page-banner -->
+  </header>
+
+  <main>
+    <div class="page-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3">
+            <div class="subhead">About Us</div>
+            <h2 class="title-section">We are <span class="fg-primary">Professional Teams</span> to Growth your Business</h2>
+
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of</p>
+
+            <a href="about.html" class="btn btn-primary mt-4">Read More</a>
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="about-img">
+              <img src="..//img/about.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .page-section -->
+
+    <div class="page-section">
+      <div class="container">
+        <div class="text-center">
+          <div class="subhead">Our Services</div>
+          <h2 class="title-section">See what can we do for your Projects</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
+            <div class="text-center">
+              <div class="img-fluid mb-4">
+                <img src="..//img/icons/web_development.svg" alt="">
+              </div>
+              <h5>Web Development</h5>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
+            <div class="text-center">
+              <div class="img-fluid mb-4">
+                <img src="..//img/icons/graphics_design.svg" alt="">
+              </div>
+              <h5>Graphics Design</h5>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
+            <div class="text-center">
+              <div class="img-fluid mb-4">
+                <img src="..//img/icons/seo_and_marketing.svg" alt="">
+              </div>
+              <h5>SEO & Marketing</h5>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
+            <div class="text-center">
+              <div class="img-fluid mb-4">
+                <img src="..//img/icons/customer_services.svg" alt="">
+              </div>
+              <h5>Customer Services</h5>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
+            <div class="text-center">
+              <div class="img-fluid mb-4">
+                <img src="..//img/icons/app_development.svg" alt="">
+              </div>
+              <h5>App Development</h5>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
+            <div class="text-center">
+              <div class="img-fluid mb-4">
+                <img src="..//img/icons/ui_ux_design.svg" alt="">
+              </div>
+              <h5>UI/UX Design</h5>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
+            <div class="text-center">
+              <div class="img-fluid mb-4">
+                <img src="..//img/icons/product_design.svg" alt="">
+              </div>
+              <h5>Product Design</h5>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
+            <div class="text-center">
+              <div class="img-fluid mb-4">
+                <img src="..//img/icons/data_analyst.svg" alt="">
+              </div>
+              <h5>Data Analyst</h5>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- .container -->
+    </div> <!-- .page-section -->
+
+    <div class="page-section">
+      <div class="container">
+        <div class="text-center">
+          <div class="subhead">Our Teams</div>
+          <h2 class="title-section">The Expert Team on ReveTive</h2>
+        </div>
+
+        <div class="owl-carousel team-carousel mt-5">
+          <div class="team-wrap">
+            <div class="team-profile">
+              <img src="..//img/teams/team_1.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h5>Walter White</h5>
+              <div class="text-sm fg-grey">Chief Executive Officer</div>
+
+              <div class="social-button">
+                <a href="#"><span class="mai-logo-facebook-messenger"></span></a>
+                <a href="#"><span class="mai-call"></span></a>
+                <a href="#"><span class="mai-mail"></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-wrap">
+            <div class="team-profile">
+              <img src="..//img/teams/team_2.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h5>Sarah Johanson</h5>
+              <div class="text-sm fg-grey">Chief Technology Officer</div>
+
+              <div class="social-button">
+                <a href="#"><span class="mai-logo-facebook-messenger"></span></a>
+                <a href="#"><span class="mai-call"></span></a>
+                <a href="#"><span class="mai-mail"></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-wrap">
+            <div class="team-profile">
+              <img src="..//img/teams/team_3.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h5>Anna Anderson</h5>
+              <div class="text-sm fg-grey">Product Manager</div>
+
+              <div class="social-button">
+                <a href="#"><span class="mai-logo-facebook-messenger"></span></a>
+                <a href="#"><span class="mai-call"></span></a>
+                <a href="#"><span class="mai-mail"></span></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- .container -->
+    </div> <!-- .page-section -->
+
+    <div class="page-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 py-3">
+            <div class="subhead">Portfolio</div>
+            <h2 class="title-section">Our Latest Projects</h2>
+          </div>
+          <div class="col-md-6 py-3 text-md-right">
+            <a href="portfolio.html" class="btn btn-outline-primary">Browse Projects <span class="mai-arrow-forward ml-2"></span></a>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-lg-4 py-3">
+            <div class="portfolio">
+              <a href="..//img/portfolio/work-1.jpg" data-fancybox="portfolio">
+                <img src="..//img/portfolio/work-1.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 py-3">
+            <div class="portfolio">
+              <a href="..//img/portfolio/work-2.jpg" data-fancybox="portfolio">
+                <img src="..//img/portfolio/work-2.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 py-3">
+            <div class="portfolio">
+              <a href="..//img/portfolio/work-3.jpg" data-fancybox="portfolio">
+                <img src="..//img/portfolio/work-3.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 py-3">
+            <div class="portfolio">
+              <a href="..//img/portfolio/work-4.jpg" data-fancybox="portfolio">
+                <img src="..//img/portfolio/work-4.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 py-3">
+            <div class="portfolio">
+              <a href="..//img/portfolio/work-5.jpg" data-fancybox="portfolio">
+                <img src="..//img/portfolio/work-5.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 py-3">
+            <div class="portfolio">
+              <a href="..//img/portfolio/work-6.jpg" data-fancybox="portfolio">
+                <img src="..//img/portfolio/work-6.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- .container -->
+    </div> <!-- .page-section -->
+
+    <!-- Testimonials -->
+    <div class="page-section">
+      <div class="container">
+        <div class="owl-carousel testimonial-carousel">
+          <div class="card-testimonial">
+            <div class="content">
+              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
+            </div>
+            <div class="author">
+              <div class="avatar">
+                <img src="..//img/person/person_1.jpg" alt="">
+              </div>
+              <div class="d-inline-block ml-2">
+                <div class="author-name">Sam Watson</div>
+                <div class="author-info">CEO - Mosh Elite Ltd.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-testimonial">
+            <div class="content">
+              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
+            </div>
+            <div class="author">
+              <div class="avatar">
+                <img src="..//img/person/person_2.jpg" alt="">
+              </div>
+              <div class="d-inline-block ml-2">
+                <div class="author-name">Edinson Alfa</div>
+                <div class="author-info">CEO - Mosh Elite Ltd.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-testimonial">
+            <div class="content">
+              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
+            </div>
+            <div class="author">
+              <div class="avatar">
+                <img src="..//img/person/person_3.jpg" alt="">
+              </div>
+              <div class="d-inline-block ml-2">
+                <div class="author-name">May Halloway</div>
+                <div class="author-info">CEO - Mosh Elite Ltd.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-testimonial">
+            <div class="content">
+              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
+            </div>
+            <div class="author">
+              <div class="avatar">
+                <img src="..//img/person/person_1.jpg" alt="">
+              </div>
+              <div class="d-inline-block ml-2">
+                <div class="author-name">Sam Watson</div>
+                <div class="author-info">CEO - Mosh Elite Ltd.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-testimonial">
+            <div class="content">
+              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
+            </div>
+            <div class="author">
+              <div class="avatar">
+                <img src="..//img/person/person_2.jpg" alt="">
+              </div>
+              <div class="d-inline-block ml-2">
+                <div class="author-name">Edinson Alfa</div>
+                <div class="author-info">CEO - Mosh Elite Ltd.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-testimonial">
+            <div class="content">
+              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
+            </div>
+            <div class="author">
+              <div class="avatar">
+                <img src="..//img/person/person_3.jpg" alt="">
+              </div>
+              <div class="d-inline-block ml-2">
+                <div class="author-name">May Halloway</div>
+                <div class="author-info">CEO - Mosh Elite Ltd.</div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .page-section -->
+
+    <div class="page-section">
+      <div class="container">
+        <div class="text-center">
+          <div class="subhead">News</div>
+          <h2 class="title-section">Read Our Latest News</h2>
+        </div>
+
+        <div class="row my-5 card-blog-row">
+          <div class="col-lg-3 py-3">
+            <div class="card-blog">
+              <div class="header">
+                <div class="entry-footer">
+                  <div class="post-author">Sam Newman</div>
+                  <a href="#" class="post-date">23 Apr 2020</a>
+                </div>
+              </div>
+              <div class="body">
+                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
+              </div>
+              <div class="footer">
+                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 py-3">
+            <div class="card-blog">
+              <div class="header">
+                <div class="avatar">
+                  <img src="..//img/person/person_1.jpg" alt="">
+                </div>
+                <div class="entry-footer">
+                  <div class="post-author">Sam Newman</div>
+                  <a href="#" class="post-date">23 Apr 2020</a>
+                </div>
+              </div>
+              <div class="body">
+                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
+                <div class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+              </div>
+              <div class="footer">
+                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 py-3">
+            <div class="card-blog">
+              <div class="header">
+                <div class="avatar">
+                  <img src="..//img/person/person_2.jpg" alt="">
+                </div>
+                <div class="entry-footer">
+                  <div class="post-author">Sam Newman</div>
+                  <a href="#" class="post-date">23 Apr 2020</a>
+                </div>
+              </div>
+              <div class="body">
+                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
+                <div class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+              </div>
+              <div class="footer">
+                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 py-3">
+            <div class="card-blog">
+              <div class="header">
+                <div class="avatar">
+                  <img src="..//img/person/person_3.jpg" alt="">
+                </div>
+                <div class="entry-footer">
+                  <div class="post-author">Sam Newman</div>
+                  <a href="#" class="post-date">23 Apr 2020</a>
+                </div>
+              </div>
+              <div class="body">
+                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
+                <div class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+              </div>
+              <div class="footer">
+                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="blog.html" class="btn btn-primary">View More</a>
+        </div>
+
+      </div> <!-- .container -->
+    </div> <!-- .page-section -->
+
+    <div class="page-section">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="title-section mb-3">Stay in touch</h2>
+          <p>Just say hello or drop us a line. You can manualy send us email on <a href="mailto:example@mail.com">example@mail.com</a></p>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-8">
+            <form action="#" class="form-contact">
+              <div class="row">
+                <div class="col-sm-6 py-2">
+                  <label for="name" class="fg-grey">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter name..">
+                </div>
+                <div class="col-sm-6 py-2">
+                  <label for="email" class="fg-grey">Email</label>
+                  <input type="text" class="form-control" id="email" placeholder="Email address..">
+                </div>
+                <div class="col-12 py-2">
+                  <label for="subject" class="fg-grey">Subject</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Subject..">
+                </div>
+                <div class="col-12 py-2">
+                  <label for="message" class="fg-grey">Message</label>
+                  <textarea id="message" rows="8" class="form-control" placeholder="Enter message.."></textarea>
+                </div>
+                <div class="col-12 mt-3">
+                  <button type="submit" class="btn btn-primary px-5">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div> <!-- .container -->
+    </div> <!-- .page-section -->
+
+    <div class="page-section">
+      <div class="container-fluid">
+        <div class="row row-cols-md-3 row-cols-lg-5 justify-content-center text-center">
+          <div class="py-3 px-5">
+            <img src="..//img/clients/airbnb.png" alt="">
+          </div>
+          <div class="py-3 px-5">
+            <img src="..//img/clients/google.png" alt="">
+          </div>
+          <div class="py-3 px-5">
+            <img src="..//img/clients/mailchimp.png" alt="">
+          </div>
+          <div class="py-3 px-5">
+            <img src="..//img/clients/paypal.png" alt="">
+          </div>
+          <div class="py-3 px-5">
+            <img src="..//img/clients/stripe.png" alt="">
+          </div>
+        </div>
+      </div> <!-- .container-fluid -->
+    </div> <!-- .page-section -->
+
+  </main>
+
+  <footer class="page-footer">
     <div class="container">
-     <span class="angle2"></span>
-    <span class="angle"></span>
-     <div class="row">
-
-       <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".5s">
-           <h2>How it <span>works</span></h2>
-           <p>Display your mobile apps awesome features with icon lists and an image carousel of each page. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
-       </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-4">
-         <div class="row">     
-          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInLeft animated textright" data-wow-delay=".5s">
-            <h3>Lorem ipsum</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInRight animated" data-wow-delay=".5s">
-                <i class="fa fa-apple iconfont"></i>
-          </div>    
+      <div class="row">
+        <div class="col-lg-3 py-3">
+          <h3>Reve<span class="fg-primary">Tive.</span></h3>
         </div>
-        <div class="row"> 
-         <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInLeft animated textright" data-wow-delay=".6s">
-            <h3>Lorem ipsum</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInRight animated" data-wow-delay=".6s">
-                <i class="fa fa-rocket iconfont"></i>
-          </div>     
+        <div class="col-lg-3 py-3">
+          <h5>Contact Information</h5>
+          <p>301 The Greenhouse, Custard Factory, London, E2 8DY.</p>
+          <p>Email: example@mail.com</p>
+          <p>Phone: +00 112323980</p>
         </div>
-        <div class="row">            
-         <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInLeft animated textright" data-wow-delay=".7s">
-            <h3>Lorem ipsum</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-          <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInRight animated" data-wow-delay=".7s">
-                <i class="fa fa-film iconfont"></i>
-          </div>         
-           
-        </div>        
+        <div class="col-lg-3 py-3">
+          <h5>Company</h5>
+          <ul class="footer-menu">
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">News & Feed</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Newsletter</h5>
+          <form action="#">
+            <input type="text" class="form-control" placeholder="Enter your email">
+            <button type="submit" class="btn btn-primary btn-sm mt-2">Submit</button>
+          </form>
+        </div>
       </div>
 
-      <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated textcenter" data-wow-delay=".4s">
-       <img src="img/slide-bg.png" alt="slide-bg" />
-      </div>  
-         
-      <div class="col-xs-12 col-sm-4 col-md-4">
-         <div class="row">         
-          <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInLeft animated" data-wow-delay=".5s">
-                <i class="fa fa-android iconfont2"></i>
-          </div>    
-          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInRight animated textleft" data-wow-delay=".5s">
-            <h3>Lorem ipsum</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-           
+      <hr>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <p>Copyright 2020. This template designed by <a href="https://macodeid.com">MACode ID</a></p>
         </div>
-        <div class="row">    
-        <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInLeft animated" data-wow-delay=".6s">
-                <i class="fa fa-css3 iconfont2"></i>
-          </div>          
-          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInRight animated textleft" data-wow-delay=".6s">
-            <h3>Lorem ipsum</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
+        <div class="col-md-6 text-right">
+          <div class="sosmed-button">
+            <a href="#"><span class="mai-logo-facebook-f"></span></a>
+            <a href="#"><span class="mai-logo-twitter"></span></a>
+            <a href="#"><span class="mai-logo-youtube"></span></a>
+            <a href="#"><span class="mai-logo-linkedin"></span></a>
           </div>
-          
         </div>
-        <div class="row">    
-        <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInLeft animated" data-wow-delay=".7s">
-                <i class="fa fa-users iconfont2"></i>
-          </div>          
-          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInRight animated textleft" data-wow-delay=".7s">
-            <h3>Lorem ipsum</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-           
-        </div>        
       </div>
     </div>
-    </div>   
-	<!-- =============== container end =============== -->	
-    </section>
-    <!-- =============== Screenshots =============== -->
-    <section id="Screenshots" class="">
-	<!-- =============== container =============== -->
-    <div class="container">
-    <span class="angle2"></span>
-    <span class="angle"></span>
-     <div class="row">
+  </footer>
 
-       <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".1s">
-           <h2>Screen <span>Shots</span></h2>
-           <p>Display your mobile apps awesome features with icon lists and an image carousel of each page. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
-       </div>
+  
+<script src="..//js/jquery-3.5.1.min.js"></script>
 
-      <div class="col-xs-12 col-sm-12 col-md-12">
-         <div class="row">     
-          <div class="col-xs-12 col-sm-12 col-md-12 wow zoomIn animated textright" data-wow-delay=".1s">           
-               <div class="span12">
+<script src="..//js/bootstrap.bundle.min.js"></script>
 
-                      <div id="owl-demo" class="owl-carousel">
-                        <div class="item">
-                            <div class="imghover" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img src="img/owl1.jpg" alt="Owl Image">         
-                            <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
-                            </div> 
-                        </div>
-                        <div class="item">
-                            <div class="imghover" data-toggle="modal" data-target="#exampleModa2" data-whatever="@mdo">
-                            <img src="img/owl2.jpg" alt="Owl Image">
-                             <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
-                            </div>
-                        </div>
-                       <div class="item">
-                            <div class="imghover" data-toggle="modal" data-target="#exampleModa3" data-whatever="@mdo">
-                            <img src="img/owl3.jpg" alt="Owl Image">
-                             <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
-                            </div>
-                        </div> 
-                        <div class="item">
-                            <div class="imghover" data-toggle="modal" data-target="#exampleModa4" data-whatever="@mdo">
-                            <img src="img/owl4.jpg" alt="Owl Image">
-                             <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
-                            </div>
-                        </div>
-                      </div>              
-                    </div>     
-                      
-        </div>     
-          <!-- =============== popup large image =============== -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-          <div class="modal-dialog" role="document">
-            <img src="img/owl1.jpg" alt="Owl Image">
-          </div>
-         </div>
+<script src="..//vendor/owl-carousel/js/owl.carousel.min.js"></script>
 
-         <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2">
-          <div class="modal-dialog" role="document">
-            <img src="img/owl2.jpg" alt="Owl Image">
-          </div>
-         </div>
-         
-         <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3">
-          <div class="modal-dialog" role="document">
-            <img src="img/owl3.jpg" alt="Owl Image">
-          </div>
-         </div>
-         
-         <div class="modal fade" id="exampleModa4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe4">
-          <div class="modal-dialog" role="document">
-            <img src="img/owl4.jpg" alt="Owl Image">
-          </div>
-         </div>
-		 <!-- =============== popup large image end =============== -->
-      </div>
-      
-    </div>
-    </div>      
-	</div><!-- =============== container end =============== -->
-    </section>
-    <!-- =============== Price =============== -->
-    <section id="Price" class="">
-	<!-- =============== container =============== -->
-        <div class="container">
-        <span class="angle2"></span>
-        <span class="angle"></span>
+<script src="..//vendor/wow/wow.min.js"></script>
 
-         <div class="row">
+<script src="..//vendor/fancybox/js/jquery.fancybox.min.js"></script>
 
-            <div class="col-xs-12 col-sm-12 col-md-12 wow zoomIn animated headding" data-wow-delay=".1s">
-               <h2>Price <span>List</span></h2>
-               <p>Display your mobile apps awesome features with icon lists and an image carousel of each page. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
-           </div>
+<script src="..//vendor/isotope/isotope.pkgd.min.js"></script>
 
-          <div class="col-xs-12 col-sm-4 col-md-4 wow fadeInLeft animated" >
-          <div class="price-wrapper ">
-		        <h3 class="price-title">Students</h3>
-		        <div class="price">
-			        <div class="value-box">
-				        <div class="value-box-content">
-					        <span class="value">
-						        <i></i><span class="number">FREE</span>
-					        </span>
-					        <span class="month invisible"></span>
-				        </div>
-			        </div>
+<script src="..//js/google-maps.js"></script>
 
-			        <div class="content-box">			
-                        <ul>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        </ul>
-			        </div>
-			        <div class="sign-box">
-                     <a href="#"><span>Sign Up</span></a>			
-                    </div>
-		        </div>
-	        </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 wow zoomIn animated">
-          <div class="price-wrapper ">
-		        <h3 class="price-title">Small</h3>
-		        <div class="price">
-			        <div class="value-box">
-				        <div class="value-box-content">
-					        <span class="value">
-						        <i></i><span class="number"> $10 </span>
-					        </span>
-					        <span class="month">per month</span>
-				        </div>
-			        </div>
+<script src="..//js/theme.js"></script>
 
-			        <div class="content-box">			
-                        <ul>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        </ul>
-			        </div>
-			        <div class="sign-box">
-                     <a href="#"><span>Sign Up</span></a>			
-                    </div>
-		        </div>
-	        </div> 
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 wow zoomIn animated">
-          <div class="price-wrapper ">
-		        <h3 class="price-title">Standard</h3>
-		        <div class="price standard">
-			        <div class="value-box">
-				        <div class="value-box-content">
-					        <span class="value">
-						       <span class="number">$50</span>
-					        </span>
-					        <span class="month">per month</span>
-				        </div>
-			        </div>
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script> -->
 
-			        <div class="content-box">			
-                        <ul>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        <li>list item</li>
-                        </ul>
-			        </div>
-			        <div class="sign-box">
-                     <a href="#"><span>Sign Up</span></a>			
-                    </div>
-		        </div>
-	        </div>
-          </div>     
-        </div>
-        </div>    <!-- =============== container end =============== -->  
-        </section>
-    <!-- =============== Contact =============== -->
-    <section id="contact">
-	<!-- =============== container =============== -->
-		<div class="container">
-			    <div class="row">
-                 <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".1s">
-                   <h2>Contact <span>Us</span></h2>
-                   <p>Display your mobile apps awesome features with icon lists and an image carousel of each page. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
-               </div>
-
-
-			</div>
-
-			<div class="row">
-
-				<div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".1s">
-
-					<form>
-						<div class="ajax-hidden">
-							<div class="form-group wow fadeInUp animated">
-								<label for="c_name" class="sr-only">Name</label>
-								<input type="text" placeholder="Name" name="c_name" class="form-control" id="c_name">
-							</div>
-
-							<div data-wow-delay=".1s" class="form-group wow fadeInUp animated">
-								<label for="c_email" class="sr-only">Email</label>
-								<input type="email" placeholder="E-mail" name="c_email" class="form-control" id="c_email">
-							</div>
-
-							<div data-wow-delay=".2s" class="form-group wow fadeInUp animated">
-								<textarea placeholder="Message" rows="7" name="c_message" id="c_message" class="form-control"></textarea>
-							</div>
-
-							<button data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="submit">Send Message</button>
-						</div>
-						<div class="ajax-response"></div>
-					</form>
-
-				</div>
-                <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated map" data-wow-delay=".5s">
-
-					  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6508922.473104964!2d-123.76275651635396!3d37.19583981824279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCalifornia%2C+United+States!5e0!3m2!1sen!2sin!4v1450994260631" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-				</div>
-                 <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".6s">
-
-					  <section id="text-15" class="widget widget_text">
-                         <h3 class="widget-title">California, United States</h3> <div class="textwidget">785, Firs Avenue, place Mall,<br>
-                        <p>Tel: 01 234-56786<br>
-                        Mobile: 01 234-56786<br>
-                        E-mail: <a href="#">info@templatestock.com</a></p>
-                        <a href="#">Get directions on the map</a> →</div>
-                    </section>
-
-				</div>                
-			</div>
-		</div><!-- =============== container end =============== -->
-	</section>
-    <!-- Footer -->
-    <footer id="footer">
-	<!-- =============== container =============== -->
-    <div class="container">
-			    <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-
-					<ul class="social-links">
-						<li><a class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-name: fadeInUp;"><i class="fa fa-facebook"></i></a></li>
-						<li><a data-wow-delay=".1s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;"><i class="fa fa-twitter"></i></a></li>
-						<li><a data-wow-delay=".2s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><i class="fa fa-google-plus"></i></a></li>
-						<li><a data-wow-delay=".4s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"><i class="fa fa-pinterest"></i></a></li>
-						<li><a data-wow-delay=".5s" class="wow fadeInUp animated" href="index.html#" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"><i class="fa fa-envelope"></i></a></li>
-					</ul>
-
-                    <p class="copyright">
-                        &copy; 2016 Canvas
-					</p>
-
-				</div>
-			</div>
-    </div><!-- =============== container end =============== -->
-	</footer>
-    <!-- =============== jQuery =============== -->
-    <script src="js/jquery.js"></script>
-    <!-- =============== Bootstrap Core JavaScript =============== -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- =============== Plugin JavaScript =============== -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!-- =============== Custom Theme JavaScript =============== -->
-    <script src="js/creative.js"></script>
-    <!-- =============== owl carousel =============== -->
-    <script src="owl-carousel/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo").owlCarousel({
-                autoPlay: 3000,
-                items: 3,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3]
-            });
-
-        });
-    </script>
 </body>
 </html>
