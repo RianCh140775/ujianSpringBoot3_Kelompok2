@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Detail Penumpang</title>
+</head>
+<body>
+<h1>Anda telah terdaftar, dengan data berikut;</h1>
+<div th:each="data: ${findAll}">
+
+	<p th:text="${data.nik}"> Nik :	</p>
+	<p th:text="${data.nama}"> Nama :	</p>
+	<p th:text="${data.telepon}"> Nik :	</p>
+	<!-- 
+        <table class="table table-striped table-bordered">
+            <tbody>
+                <tr>     
+                    <td >nik</td>
+                    <td th:text="${data.nama}">nama </td>
+                    <td th:text="${data.telepon}">telepon </td>
+                    
+                </tr>
+            </tbody>
+        </table> -->
+    </div>
+</body>
+</html>

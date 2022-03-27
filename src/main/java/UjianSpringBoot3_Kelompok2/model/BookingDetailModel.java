@@ -1,12 +1,13 @@
 package UjianSpringBoot3_Kelompok2.model;
 
-public interface BookingCustomeGetNameModel {
+public interface BookingDetailModel{
 
 	long getId();
+	String getNik();
+	String getNama();
+	long getId_keberangkatan();
+	String getTanggal();
 	String getNama_perusahaan();
 	String getKelas();
 	int getHarga();
-	String getTanggal();
-	String getDeskripsi();
-	
 }

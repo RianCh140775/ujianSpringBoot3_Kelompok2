@@ -22,7 +22,7 @@ public class KeberangkatanModel {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private long id_keberangkatan;
 	private int harga;
 	private String kelas;
 	private String tanggal;

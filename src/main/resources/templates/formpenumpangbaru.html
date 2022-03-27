@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registrasi Penumpang</title>
+
+</head>
+<body>
+	<h1>Form Pendaftaran Penumpang</h1>
+	<form method="POST" th:action="@{/detailpenumpang}"
+		th:object="${penumpangModel}">
+		<div class="mb-3">
+			<label for="nik" class="form-label">NIK</label> <input type="text"
+				class="form-control" id="nik" th:field="*{nik}">
+		</div>
+
+		<div class="mb-3">
+			<label for="nama" class="form-label">Nama</label> <input type="text"
+				class="form-control" id="nama" th:field="*{nama}">
+		</div>
+		<div class="mb-3">
+			<label for="telepon" class="form-label">Nomor Telepon</label> <input type="text"
+				class="form-control" id="telepon" th:field="*{telepon}">
+		</div>
+	
+	<button type="submit" class="btn btn-primary">Submit</button>
+	
+	</form>
+</body>
+</html>

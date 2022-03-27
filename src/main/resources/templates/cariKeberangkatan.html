@@ -30,7 +30,7 @@
 
   <header>
     
-	 <div th:insert="fragment/header :: navbar(aktif='keberangkatan')"/>
+	 <div th:insert="fragment/header :: navbar(aktif='cariKeberangkatan')"/>
     <div class="page-banner bg-img bg-img-parallax overlay-dark" style="background-image: url(..//img/bg_image_3.jpg);">
       <div class="container h-100">
         <div class="row justify-content-center align-items-center h-100">
@@ -53,182 +53,57 @@
       <div class="container">
         <div class="text-center">
           <div class="subhead">Our Services</div>
-          <h2 class="title-section">See what can we do for your Projects</h2>
+          <h2 class="title-section">Cari Keberangkatan</h2>
         </div>
+		
+		<form class="row g-3" th:action="@{/cariKeberangkatan}" method="GET">
 
-        <div class="row justify-content-center">
-          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
-            <div class="text-center">
-              <div class="img-fluid mb-4">
-                <img src="..//img/icons/web_development.svg" alt="">
-              </div>
-              <h5>Web Development</h5>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
-            <div class="text-center">
-              <div class="img-fluid mb-4">
-                <img src="..//img/icons/graphics_design.svg" alt="">
-              </div>
-              <h5>Graphics Design</h5>
-            </div>
-          </div>
+					<div class="input-group col-md-10">
+						<input type="text" style="width:200px" class="form-control py-2 border-right-0 border" th:name="terminal"
+							placeholder="Terminal">
 
-          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
-            <div class="text-center">
-              <div class="img-fluid mb-4">
-                <img src="..//img/icons/seo_and_marketing.svg" alt="">
-              </div>
-              <h5>SEO & Marketing</h5>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
-            <div class="text-center">
-              <div class="img-fluid mb-4">
-                <img src="..//img/icons/customer_services.svg" alt="">
-              </div>
-              <h5>Customer Services</h5>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
-            <div class="text-center">
-              <div class="img-fluid mb-4">
-                <img src="..//img/icons/app_development.svg" alt="">
-              </div>
-              <h5>App Development</h5>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
-            <div class="text-center">
-              <div class="img-fluid mb-4">
-                <img src="..//img/icons/ui_ux_design.svg" alt="">
-              </div>
-              <h5>UI/UX Design</h5>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
-            <div class="text-center">
-              <div class="img-fluid mb-4">
-                <img src="..//img/icons/product_design.svg" alt="">
-              </div>
-              <h5>Product Design</h5>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 col-xl-3 py-3 mb-3">
-            <div class="text-center">
-              <div class="img-fluid mb-4">
-                <img src="..//img/icons/data_analyst.svg" alt="">
-              </div>
-              <h5>Data Analyst</h5>
-            </div>
-          </div>
-
+						<input type="text" class="form-control py-2 border-right-0 border border-left-0 border" th:name="tanggal"
+							placeholder="Tanggal">
+						<button class="btn btn-outline-secondary border-left-0 border"
+							type="submit">
+							Submit
+						</button>
+					</div>
+				</form>
         </div>
+       
       </div> <!-- .container -->
+       <!--  Tabelau des utilisateurs -->
+    <div>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Deskripsi</th>
+                    <th>Waktu</th>
+                    <th>Perusahaan</th>
+                    <th>Kelas</th>
+                    <th>Harga</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr th:each="data: ${ListContent}">
+                    <td th:text="${data.id}">ID</td>
+                    <td th:text="${data.deskripsi}">Deskripsi</td>
+                    <td th:text="${data.tanggal}">Waktu</td>
+                    <td th:text="${data.nama_perusahaan}">Perusahaan </td>
+                    <td th:text="${data.kelas}">Kelas </td>
+                    <td th:text="${data.harga}">Harga </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
     </div> <!-- .page-section -->
 
     <!-- Testimonials -->
-    <div class="page-section">
-      <div class="container">
-        <div class="owl-carousel testimonial-carousel">
-          <div class="card-testimonial">
-            <div class="content">
-              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
-            </div>
-            <div class="author">
-              <div class="avatar">
-                <img src="..//img/person/person_1.jpg" alt="">
-              </div>
-              <div class="d-inline-block ml-2">
-                <div class="author-name">Sam Watson</div>
-                <div class="author-info">CEO - Mosh Elite Ltd.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-testimonial">
-            <div class="content">
-              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
-            </div>
-            <div class="author">
-              <div class="avatar">
-                <img src="..//img/person/person_2.jpg" alt="">
-              </div>
-              <div class="d-inline-block ml-2">
-                <div class="author-name">Edinson Alfa</div>
-                <div class="author-info">CEO - Mosh Elite Ltd.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-testimonial">
-            <div class="content">
-              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
-            </div>
-            <div class="author">
-              <div class="avatar">
-                <img src="..//img/person/person_3.jpg" alt="">
-              </div>
-              <div class="d-inline-block ml-2">
-                <div class="author-name">May Halloway</div>
-                <div class="author-info">CEO - Mosh Elite Ltd.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-testimonial">
-            <div class="content">
-              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
-            </div>
-            <div class="author">
-              <div class="avatar">
-                <img src="..//img/person/person_1.jpg" alt="">
-              </div>
-              <div class="d-inline-block ml-2">
-                <div class="author-name">Sam Watson</div>
-                <div class="author-info">CEO - Mosh Elite Ltd.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-testimonial">
-            <div class="content">
-              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
-            </div>
-            <div class="author">
-              <div class="avatar">
-                <img src="..//img/person/person_2.jpg" alt="">
-              </div>
-              <div class="d-inline-block ml-2">
-                <div class="author-name">Edinson Alfa</div>
-                <div class="author-info">CEO - Mosh Elite Ltd.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-testimonial">
-            <div class="content">
-              The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph
-            </div>
-            <div class="author">
-              <div class="avatar">
-                <img src="..//img/person/person_3.jpg" alt="">
-              </div>
-              <div class="d-inline-block ml-2">
-                <div class="author-name">May Halloway</div>
-                <div class="author-info">CEO - Mosh Elite Ltd.</div>
-              </div>
-            </div>
-          </div>
-
-        </div> <!-- .row -->
-      </div> <!-- .container -->
-    </div> <!-- .page-section -->
 
     <div class="page-section">
       <div class="container-fluid">
